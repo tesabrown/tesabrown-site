@@ -1,0 +1,161 @@
+:root {
+  --bg: #d8d0c1;
+  --ink: #1a1a1a;
+  --accent: #f4c430;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: monospace;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+.logo {
+  font-family: "Press Start 2P", monospace;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.glitch {
+  position: relative;
+  text-shadow: 2px 2px var(--accent);
+}
+
+.about-label {
+  display: inline-block;
+  border-left: 4px solid var(--accent);
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.about p {
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+mark {
+  background: var(--accent);
+  padding: 0 4px;
+}
+
+/* HERO RIGHT */
+
+.hero-right {
+  text-align: center;
+}
+
+.hero-right img {
+  width: 280px;
+  image-rendering: pixelated;
+}
+
+.hero-right small {
+  display: block;
+  margin-top: 0.5rem;
+  opacity: 0.7;
+}
+
+/* FILTERS */
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 3rem;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+
+.filters button {
+  background: none;
+  border: none;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.filters .active {
+  background: var(--accent);
+  padding: 0.3rem 0.6rem;
+}
+
+/* CLIPS GRID */
+
+.clips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.clip-card img {
+  width: 100%;
+  display: block;
+  border: 2px solid #000;
+}
+
+.clip-card h3 {
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.7rem;
+  margin: 0.6rem 0;
+}
+
+.lvl {
+  background: var(--accent);
+  padding: 2px 4px;
+  margin-left: 4px;
+}
+
+.clip-card p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.tags {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  opacity: 0.7;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 2rem;
+  border-top: 2px solid #000;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.to-be-continued {
+  text-align: center;
+  font-family: "Press Start 2P", monospace;
+  font-size: 0.7rem;
+  margin: 3rem 0 1.5rem;
+  opacity: 0.8;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
